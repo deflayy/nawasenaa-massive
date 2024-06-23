@@ -1,0 +1,136 @@
+.konten-header {
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.konten-header h1 {
+  margin: 0;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.konten-header p {
+  font-size: 1.5em;
+  margin: 0;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.konten-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.konten-sidebar {
+  width: 300px;
+  padding: 20px;
+  background-color: #eef;
+  box-sizing: border-box;
+}
+
+.konten-back-button {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.konten-search-bar {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.konten-search-bar input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.konten-search-bar button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+
+.konten-recent-posts h2 {
+  margin-top: 0;
+}
+
+.konten-recent-posts ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.konten-recent-posts li {
+  margin: 10px 0;
+}
+
+.konten-main-content {
+  flex-grow: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.konten-post-header {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.konten-main-content h1 {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+.konten-featured-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.konten-post-content p {
+  margin: 20px 0;
+}
+
+.konten-post-sidebar {
+  background-color: #eef;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.konten-post-sidebar h2 {
+  margin-top: 0;
+}
+
+.konten-post-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.konten-post-sidebar li {
+  margin: 10px 0;
+}
+
+.konten-post-sidebar p {
+  margin-top: 20px;
+}

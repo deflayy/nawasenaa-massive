@@ -1,14 +1,41 @@
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
-import contactRoutes from "./routes/contactRoutes.js"; // Sesuaikan dengan path file Anda
+import dotenv from "dotenv";
+import db from "./config/db.js";
+import contactRoutes from "./routes/contactRoutes.js";
+
+// Load environment variables from .env file
+dotenv.config();
+
 const app = express();
 
-app.use(cors());
+// Middleware
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 app.use(bodyParser.json());
-app.use("/api", contactRoutes); // Rute API untuk kontak
+
+// Test database connection
+db.getConnection()
+  .then((connection) => {
+    console.log("Database connected!");
+    // Release the connection after confirming it's successful
+    connection.release();
+  })
+  .catch((err) => {
+    console.error("Database connection failed: ", err.message);
+    process.exit(1); // Exit the application if database connection fails
+  });
+
+// Routes
+app.use("/api", contactRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`Server berjalan di port ${PORT}`);
+  console.log(`Server is running on http://localhost:${PORT}`);
 });

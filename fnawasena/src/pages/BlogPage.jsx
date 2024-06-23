@@ -32,7 +32,7 @@ const BlogPage = () => {
         <Container>
           <Row>
             <Col md={4}>
-              <Link to="/blog1" className="blog-link">
+              <Link to="/kontensatu" className="blog-link">
                 <img src={Blog1} alt="Blog 1" />
                 <div className="blog-info">
                   <h3>Meningkatkan Kesuburan Tanah Alami</h3>
@@ -46,7 +46,7 @@ const BlogPage = () => {
               </Link>
             </Col>
             <Col md={4}>
-              <Link to="/blog2" className="blog-link">
+              <Link to="/kontendua" className="blog-link">
                 <img src={Blog2} alt="Blog 2" />
                 <div className="blog-info">
                   <h3>Tanah di Indonesia 70 Persen Tidak Subur</h3>
@@ -60,7 +60,7 @@ const BlogPage = () => {
               </Link>
             </Col>
             <Col md={4}>
-              <Link to="/blog3" className="blog-link">
+              <Link to="/kontentiga" className="blog-link">
                 <img src={Blog3} alt="Blog 3" />
                 <div className="blog-info">
                   <h3>Kasgot, Alternatif Pupuk Ramah Lingkungan</h3>

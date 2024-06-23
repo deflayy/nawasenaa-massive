@@ -30,7 +30,7 @@ export const navLinks = [
     text: "TENTANG KAMI",
   },
   {
-    id: 4,
+    id: 5,
     path: "kontak",
     text: "KONTAK",
   },

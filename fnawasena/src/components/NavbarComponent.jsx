@@ -36,12 +36,18 @@ const NavbarComponent = () => {
           <Nav className="mx-auto text-center">
             {navLinks.map((link) => (
               <div className="nav-link" key={link.id}>
-                <NavLink to={link.path} activeClassName="active" end>
+                <NavLink to={link.path} activeclassname="active" end>
                   {link.text}
                 </NavLink>
               </div>
             ))}
           </Nav>
+          {/* <nav>
+            <button onClick={() => (window.location.href = "/admin/login")}>
+              Admin Login
+            </button>
+          </nav>{" "}
+          * */}
         </Navbar.Collapse>
       </Container>
     </Navbar>
